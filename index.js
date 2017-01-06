@@ -1,0 +1,1 @@
+serie = new Mongo.Collection("serie")

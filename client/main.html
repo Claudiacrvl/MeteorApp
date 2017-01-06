@@ -1,0 +1,34 @@
+<head>
+  <title>MeteorApp</title>
+</head>
+<body>
+<header>
+  <img class="logo" src="/01.png" alt="">
+</header>
+<div class="content">
+  {{> claudia}}
+</div>
+</body>
+<template name="claudia">
+    <h1>TOP SÉRIE NETFLIX 2017</h1>
+    <div class="box">
+ <input class="name" type="text" id="nom_serie"  placeholder="Nom de la série">
+        <div class="star">
+            <ul>
+            <li id="star_1"><img src="/favorite.svg" alt=""></li>
+            <li id="star_2"><img src="/favorite.svg" alt=""></li>
+            <li id="star_3"><img src="/favorite.svg" alt=""></li>
+            <li id="star_4"><img src="/favorite.svg" alt=""></li>
+            <li id="star_5"><img src="/favorite.svg" alt=""></li>
+            </ul>
+        </div>
+  <button class="add" type="button" id="add_serie">Ajouter</button>
+  <ul class="result">
+   {{#each serie}}
+   <li class="list">{{ name }} </li>
+    <button class="delete_serie">Supprimer</button>
+   {{/each}}
+ </ul>
+        </div>
+</template>
+
