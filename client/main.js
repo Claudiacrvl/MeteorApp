@@ -18,11 +18,6 @@ Template.claudia.events({
     serie.insert({name : nouvel_serie});
     template.find("#nom_serie").value = "";
 
-    "click #star_1": function (event, template)
-  {
-
-  }
-
   },
   "click .delete_serie": function (event, template){
     serie.remove ({_id: this._id})
